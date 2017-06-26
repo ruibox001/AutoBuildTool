@@ -1,11 +1,12 @@
 #!/bin/sh
 
 #默认是Release模式
+#作者：王声远
 branch="wsy_02_24"
-userName="wangshengyuan"
-userPwd="wangWANG1234"
+userName="git用户名"
+userPwd="git密码"
 shellpath=$(cd "$(dirname "$0")"; pwd)
-projectName="tronker-ios"
+projectName="项目名称"
 
 PATHS=$shellpath/$projectName
 echo "$PATHS";
@@ -17,7 +18,7 @@ else
 cd $shellpath
 git clone \
 -b "$branch" \
-http://${userName}:${userPwd}@192.168.1.13/tronker-mobile-ios/tronker-ios.git
+http://${userName}:${userPwd}@项目的git地址
 cd "$projectName"
 fi
 
